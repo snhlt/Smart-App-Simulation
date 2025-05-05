@@ -65,7 +65,7 @@ public class MockDevices extends NanoHTTPD {/**This is the code used to simulate
                 else
                     return newFixedLengthResponse("Light is OFF");
             case "/fanStatus":
-                return newFixedLengthResponse("Fan currently set to"+fanState);
+                return newFixedLengthResponse("Fan currently set to "+fanState);
             case "/ACStatus":
                 if(AC==0){
                     return newFixedLengthResponse("Air Conditioner is turned off");
