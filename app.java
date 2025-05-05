@@ -127,8 +127,9 @@ public class app {
             System.out.println("input the action:");
             System.out.println("1 to flip the light switch");
             System.out.println("2 to set the speed of the fan");
-            System.out.println("3 change the temperature of the thermostat");
-            System.out.println("4 close the application");
+            System.out.println("3 to change the temperature of the thermostat");
+            System.out.println("4 to test the update function");
+            System.out.println("5 close the application");
             int line = scanner.nextInt();
             scanner.nextLine();
             switch(line){
@@ -154,6 +155,12 @@ public class app {
                     System.out.println(c.getACStatus());
                     break;
                 case 4:
+                    c.update();
+                    System.out.println(c.getLightStatus());
+                    System.out.println(c.getFanStatus());
+                    System.out.println(c.getACStatus());
+                    break;
+                case 5:
                     System.out.println("closing the application");
                     run=false;
                     break;
